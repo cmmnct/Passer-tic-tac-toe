@@ -1,24 +1,46 @@
+/*  stap 2: haal de overbodige stijlregels playerO en playerX weg 
+
+    stap 3: verander de breedte van de vlakjes naar 20% In welke stijlregel zit dat? 
+
+    stap 4: voeg voor elk dier een class met de juiste achtergrondbeelding toe. 
+    Vergeet de extensie .jpg niet!
+    Zorg er met CSS voor dat de afbeelding past!
+    
+    stap 5: zie index.html */
 #game {
-    max-width: 900px;
-    min-width: 300px;
-    border: 1px solid darkslategrey;
-    margin: auto;
-    padding: 15px;
-    border-radius: 10px;
-    background-color: cadetblue;
+  max-width: 900px;
+  min-width: 300px;
+  border: 1px solid darkslategrey;
+  margin: auto;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: cadetblue;
 }
 
 #field {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
+/* stap 7: plaats een > tussen field en div. Dit zorgt ervoor dat de stijlregel alleen voor 'direct descendents' geldt */
+
 #field div {
-    box-sizing: border-box;
-    border: 1px solid darkslategray;
-    padding: 15px;
-    margin: 5px;
-    flex: 30%;
-    aspect-ratio: 1/1;
+  box-sizing: border-box;
+  border: 1px solid darkslategray;
+  padding: 15px;
+  margin: 5px;
+  flex: 30%;
+  aspect-ratio: 1/1;
 }
+
+.playerX {
+  background-color: chocolate;
+}
+
+.playerO {
+  background-color: darkolivegreen;
+}
+
+/* stap 8: voe een stijlregel toe voor de class .cover en geef deze als achtergrond de afbeelding cover.png uit de map afbeeldingen */
+/* stap 9: zet de width daarvan op 100% en de aspectratio op 1/1 */

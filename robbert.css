@@ -1,0 +1,68 @@
+#game {
+    max-width: 900px;
+    min-width: 300px;
+    border: 1px solid darkslategrey;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: cadetblue;
+}
+
+#field {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* stap 7: plaats een > tussen field en div*/
+#field > div {
+    box-sizing: border-box;
+    border: 1px solid darkslategray;
+    margin: 5px;
+    flex: 20%; /* stap 3: 30% wordt 25%*/
+    aspect-ratio: 1/1;
+}
+
+/* stap 2 : de overbodige stijlregels playerX en playerO zijn verwijderd */
+/* stap 4 : voor elke dier een class aangemaakt met de juste achtergrondafbeelding én background-size: cover*/
+/* stap 5: zie index.html */
+.eend{
+    background-image: url('images/eend.jpg');
+    background-size: cover;
+}
+.hond{
+    background-image: url('images/hond.jpg');
+    background-size: cover;
+}
+.paard{
+    background-image: url('images/paard.jpg');
+    background-size: cover;
+}
+.geit{
+    background-image: url('images/geit.jpg');
+    background-size: cover;
+}
+.muis{
+    background-image: url('images/muis.jpg');
+    background-size: cover;
+}
+.big{
+    background-image: url('images/big.jpg');
+    background-size: cover;
+}
+.kat{
+    background-image: url('images/kat.jpg');
+    background-size: cover;
+}
+.haan{
+    background-image: url('images/haan.jpg');
+    background-size: cover;
+}
+
+/* stap 8: voe een stijlregel toe voor de class .cover en geef deze als achtergrond de afbeelding cover.png uit de map afbeeldingen */
+/* stap 9: zet de width op 100% en de aspectratio op 1/1 */
+.cover {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-image: url('images/cover.png');
+}

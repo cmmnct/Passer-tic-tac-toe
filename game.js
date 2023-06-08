@@ -1,38 +1,6 @@
 "use strict";
-
-class Player {  // class definities beginnen altijd met een hoofdletter
-
-    name = '';
-    positions = [];
-    score = 0;
-
-    constructor(myName) {
-        this.name = myName; // met 'this' verwijzen we altijd naar een property van een class
-    }
-
-}
-
-function onClickField(evt) {
-    alert(evt.target.dataset.index);
-}
-
-const winningCombinations = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9],
-    [1, 4, 7],
-    [2, 5, 8],
-    [3, 6, 9],
-    [1, 5, 9],
-    [3, 5, 7]    
-]
-
-const playerX = new Player('x'); // instantie van een class
-const playerY = new Player('y');
-
-console.log(playerX, playerY)
-
-console.log(Math.random());
-
-let currentPlayer    // hoe kiezen we de currentPlayer?
-
+/* stap 10: maak een functie die uitgevoerd word als op het field geklikt wordt (zie vorig spel!) */
+// stap 11: maak IN deze functie een let 'clickedsquare' aan die het vlakje opvangt waarop geklikt is (zie vorig spel!)
+// stap 12: voer de volgende regels code uit ALS (IF) het aangeklikte vlak als class 'cover' heeft: (zie als voorbeeld vorig spel!)
+// stap 13: zet van het aangeklikte vlakje de stijl 'visibility' op 'hidden' (zie als voorbeeld vorig spel!)
+  
